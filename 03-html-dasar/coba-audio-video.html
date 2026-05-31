@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+    <title>Coba Audio & Video</title>
+  </head>
+  <body>
+    <div class="container">
+      <div style="border: 1px solid black; width: 50%; padding: 5px">
+        <h3>Audio Tester🎧📻</h3>
+
+        <audio controls><source src="media/moderation.mp3" /></audio>
+      </div>
+
+      <div style="border: 1px solid black; width: 50%; padding: 5px">
+        <h3>Video Tester🎧📻</h3>
+
+        <video controls poster="media/desk-setup-thumb.jpg">
+          <source type="video/mp4" src="media/keyboard-asmr.mp4" />
+          <source
+            type="video/webm"
+            src="media/03-html-dasar_media_keyboard-asmr.webm"
+          />
+          Browser Belum support
+        </video>
+        <audio controls><source src="media/moderation.mp3" /></audio>
+      </div>
+    </div>
+  </body>
+</html>
