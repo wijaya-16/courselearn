@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Input Atribut, Checkbox & radio button</title>
+  </head>
+  <body>
+    <h1>Contoh Input Atribut, Checkbox & radio</h1>
+
+    <form>
+      <label for="name"
+        >Nama :
+        <input
+          type="text"
+          name=" nama"
+          placeholder="Masukkan Nama Anda.."
+          autocomplete="off"
+          autofocus
+          required
+        />
+        <br /><br />
+
+        <!-- checkbox -->
+
+        <label for="check1">
+          <input type="checkbox" name="check1" id="check1" value="Running" />
+          Running
+        </label>
+        <br />
+        <label for="check2">
+          <input type="checkbox" name="check2" id="check2" value="gym" />
+          GYM
+        </label>
+        <br />
+        <label for="check3">
+          <input
+            type="checkbox"
+            name="check3"
+            id="check3"
+            value="Ngoding"
+            checked
+          />
+          Ngoding
+        </label>
+        <br />
+        <br />
+
+        <!-- radio -->
+
+        <h3>Jenis Kelamin</h3>
+
+        <label for="pria">
+          <input
+            type="radio"
+            id="pria"
+            name="jenis_kelamin"
+            value="pria"
+            checked
+          />
+          Pria
+        </label>
+        <br />
+        <label for="wanita">
+          <input type="radio" id="wanita" name="jenis_kelamin" value="wanita" />
+          Wanita
+        </label>
+        <br />
+        <button type="submit">Kirim</button>
+      </label>
+    </form>
+  </body>
+</html>
