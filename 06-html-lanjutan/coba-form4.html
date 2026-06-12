@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Elemen Form di dalam Tabel</title>
+  </head>
+  <body>
+    <h2>Universitas Teknologi Mataram</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
+      dicta quia magni obcaecati suscipit, hic iusto illum, nobis vel et rem
+      quam ratione officiis quo repellendus? Tenetur voluptatum voluptas quam,
+      corrupti esse velit qui explicabo assumenda sit exercitationem eveniet
+      ullam provident, quidem impedit quaerat unde ut amet quis numquam
+      expedita.
+    </p>
+    <hr />
+    <br />
+    <form>
+      <table border="1" cellspacing="0" cellpadding="4">
+        <tr>
+          <td align="right"><label for="nama"> Nama : </label></td>
+          <td><input type="text" placeholder="Masukkan Nama Andaa.." /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="password"> Password : </label></td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="email"> Email : </label></td>
+          <td><input type="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="tanggal"> Tanggal : </label></td>
+          <td><input type="date" name="tanggal" id="tanggal" /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="warna"> Warna : </label></td>
+          <td><input type="color" name="warna" id="warna" /></td>
+        </tr>
+        <tr>
+          <td align="right"><label for="jurusan">Jurusan : </label></td>
+          <td>
+            <!-- select -->
+            <select name="jurusan" id="jurusan">
+              <option value="">-- Pilih Jurusan Anda --</option>
+              <option value="ti">Teknik Informatika</option>
+              <option value="si">Sistem Informasi</option>
+              <option value="tf">Teknik Informasi</option>
+              <option value="rsk">Rekayasa Sistem Komputer</option>
+              <option value="mnj">Manajemen</option>
+              <option value="mnjex">Manajemen Eksekutif</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit">Kirim!</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
