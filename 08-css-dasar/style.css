@@ -1,0 +1,16 @@
+#judul {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 120px;
+  font-family: Arial;
+  color: darkgoldenrod;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  color: coral;
+  text-align: justify;
+}
