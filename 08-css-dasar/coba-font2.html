@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba CSS - Font Styling</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+      @font-face {
+        font-family: pxlify;
+        src: url(./fonts/PixelifySans-Regular.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      h1 {
+        color: crimson;
+        font-size: 60px;
+        text-align: center;
+        font-family: "Monoton", sans-serif;
+        font-weight: 300;
+      }
+
+      .font-pxlify {
+        font-family: pxlify, arial, sans-serif;
+      }
+
+      p {
+        font-size: 30px;
+        color: coral;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hallo Dunia</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptates
+      quaerat molestiae esse iste error reiciendis soluta ipsum dolores voluptas
+      placeat veritatis sint, adipisci, architecto, excepturi sed velit.
+      Adipisci, eligendi!
+    </p>
+    <p class="font-pxlify">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+      consectetur fugiat repellat officia adipisci tenetur voluptates, tempora
+      soluta. Quisquam eum voluptates, provident vel distinctio omnis
+      consequuntur molestiae nostrum corrupti quas voluptate rem ut commodi qui
+      vero ratione repellat tenetur. Quo ratione assumenda illum voluptas
+      cupiditate dignissimos eos numquam minima esse.
+    </p>
+  </body>
+</html>
