@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Box Model Margin & Padding</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .kotak1 {
+        width: 600px;
+        height: 200px;
+        background-color: #7e7b7bf0;
+        border-radius: 10px;
+        box-shadow: 3px 3px 7px #181818;
+        cursor: pointer;
+        transition: 0.3s;
+
+        /*Penerapan margin pada kotak 1*/
+        /* Penerapan margin:  top, right, bottom, left */
+        /*
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-bottom: 50px;
+        margin-left: 45px;
+        */
+
+        /*Sorthand1*/
+        /* margin: 50px;*/ /*Semua sisinya 50px*/
+
+        /*Sorthand2*/
+        /*Menggunakan margin: ( atas bawah, auto(ketengah) ) sekaligus*/
+        /*Margin auto berpengaruh pada kiri dan kanan supaya ke tengah*/
+        /*margin: 30px auto;*/
+
+        /*Menggunakan margin: ( atas bawah, kiri kanan ) sekaligus*/
+
+        /*Sorthand3*/
+
+        /*Atas 50px, Kiri kanan auto, Bawah 150px*/
+        margin: 50px auto 150px;
+
+        /*Sorthand4*/
+        /*Atas 50px, kanan 30px, Bawah 20px, Kiri 150px*/ /*Searah jarum jam*/
+        margin: 50px 30px 20px 150px;
+
+        /*Penerapan Padding*/
+        padding: 20px;
+      }
+
+      .quote {
+        font-size: 1.5rem;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1;
+      }
+
+      .quote::before,
+      .quote::after {
+        content: "❝ ";
+        color: #a05801;
+        font-size: 2.1em;
+      }
+      .quote::after {
+        content: " ❞";
+      }
+
+      div.kotak1:hover {
+        background-color: coral;
+        transform: translate(-100px) scale(0.95);
+        box-shadow: 3px 3px 7px #181818;
+      }
+
+      .kotak2 {
+        width: 500px;
+        height: 150px;
+        background-color: #0a8d8d;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #333;
+        cursor: pointer;
+        transition: 0.2s;
+
+        margin-left: 1400px;
+
+        /*Penerapan Padding*/
+        padding: 20px;
+      }
+
+      .kotak2:hover,
+      :target {
+        transform: scale(0.95);
+        background-color: burlywood;
+      }
+
+      .kotak3 {
+        width: 1250px;
+        height: 100px;
+        background-color: bisque;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 5px 5px 10px #0f0f0f;
+        transition: 0.3s;
+
+        margin: 30px auto;
+
+        /*Penerapan Padding*/
+        padding: 20px;
+      }
+
+      .kotak3:hover {
+        cursor: pointer;
+        background-color: #a0c3f0e3;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak1">
+      <p class="quote">
+        Programming bukan tentang menghafal sintaks, tetapi tentang melatih cara
+        berpikir.
+      </p>
+    </div>
+    <div class="kotak2">
+      <p class="quote">
+        Setiap bug adalah pelajaran yang sedang menunggu untuk dipahami.
+      </p>
+    </div>
+    <div class="kotak3">
+      <p class="quote">
+        Programmer hebat bukan yang tidak pernah salah, tetapi yang terus
+        memperbaiki kesalahannya.
+      </p>
+    </div>
+  </body>
+</html>
