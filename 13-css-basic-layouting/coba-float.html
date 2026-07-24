@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan CSS Float</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #b28e2d;
+        padding: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      section {
+        background: white;
+        padding: 30px;
+        margin-bottom: 50px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        color: #1e40af;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 10px;
+      }
+
+      .text-wrapping img {
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .img-left {
+        float: left;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .kolom-container {
+        background-color: #f8fafc;
+        padding: 10px;
+        border-radius: 8px;
+
+        /*menggunakan overflow dan kelas .clearfix*/
+        /*menggunakan overflow auto or hidden*/
+        /*overflow: hidden;*/
+        overflow: auto;
+      }
+
+      .kolom {
+        width: 31.33%;
+        margin: 1%;
+        padding: 20px;
+        background-color: #dbeafe;
+        border: 1px solid #bfdbfe;
+        min-height: 200px;
+        text-align: center;
+        float: right;
+      }
+
+      .gallery-container {
+        padding: 10px;
+        background-color: #f8fafc;
+        overflow: hidden;
+      }
+
+      .gallery-item {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        background-color: #eee;
+        border: 2px solid #ddd;
+        float: right;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .footer-note {
+        background-color: #1e293b;
+        color: #f1f5f9;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Eksperimen CSS Float</h1>
+
+    <section class="text-wrapping clearfix">
+      <h2>1. Text Wrapping</h2>
+      <img
+        src="https://picsum.photos/id/10/200/200"
+        alt="Gambar 1"
+        class="img-left"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo
+        saepe odio corrupti ex similique ut quam unde asperiores soluta, ducimus
+        molestiae aliquid atque enim ab dolorum ipsa corporis! Quaerat
+        asperiores consectetur odio culpa illum nihil, ipsam cupiditate cumque
+        repellat vero consequuntur magnam minus est in nisi dolores totam
+        debitis aspernatur provident soluta nobis, laudantium recusandae enim
+        porro! Cumque, praesentium veritatis. Enim consectetur, ex sit veritatis
+        hic, soluta voluptatum iure vel fugiat cum autem maxime officiis,
+        explicabo nulla sunt dignissimos ducimus consequuntur? Alias odio
+        tenetur, asperiores officiis nisi ut. Eos cumque at incidunt! Officia,
+        deleniti saepe quo corporis laudantium sit ut odit dolor assumenda odio
+        repellat nesciunt. Ea cumque maxime, cupiditate quidem, debitis facilis
+        dolorum ratione, esse nam quaerat omnis doloribus voluptatum iusto
+        ipsam? Molestiae vel aliquid odit reiciendis, distinctio dolorem
+        corporis consectetur, aspernatur placeat eveniet, quae ducimus. Expedita
+        soluta distinctio ut rem, nobis necessitatibus excepturi blanditiis
+        aspernatur ducimus fugiat! Incidunt modi eum soluta atque neque quaerat
+        ad et necessitatibus similique doloribus, consequatur quas. Dignissimos,
+        iusto aut. Totam itaque natus sequi omnis, ut, ex ea, officia molestiae
+        aliquam eveniet deleniti amet dicta reiciendis libero quisquam! Deserunt
+        exercitationem, quam pariatur commodi unde culpa eum facere possimus
+        dolore eius minima corrupti illum vero, sint similique, nulla sed
+        reprehenderit. Numquam quia laborum dolor dolorum repellat quos. Ipsum
+        rem deserunt eius voluptatibus. Deserunt, odio architecto. Quidem,
+        expedita fuga dolores maxime quod vitae delectus nisi harum? Vel
+        laudantium est similique illum rem velit, nihil fugiat voluptatibus
+        debitis ipsa quidem provident ipsum ullam inventore facere delectus
+        iusto numquam esse minima eius atque consequatur amet. Corrupti eos
+        nesciunt unde? Cumque iste unde reprehenderit obcaecati officia dolorum
+        molestiae sequi assumenda maxime eos id quas, esse fugiat sint earum
+        quia ad dolores natus, officiis consequatur. Suscipit ut, totam
+        excepturi alias earum adipisci, error veniam ipsa, perferendis explicabo
+        quo modi sequi doloremque eaque pariatur magnam corrupti architecto
+        quibusdam possimus ducimus. Quo deserunt molestias nemo impedit quos
+        sapiente, pariatur mollitia consequuntur enim explicabo dolor, vero
+        quaerat voluptatibus. Reprehenderit nihil perferendis veritatis magni
+        deserunt, perspiciatis harum neque, iusto numquam voluptatibus deleniti,
+        voluptate blanditiis! Qui, culpa accusamus! Eaque consequuntur alias
+        veritatis illum ducimus.
+      </p>
+
+      <img
+        src="https://picsum.photos/id/20/200/200"
+        alt="Gambar 2"
+        class="img-right"
+      />
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+        voluptatum optio! Iure nam aspernatur ipsam maxime architecto,
+        exercitationem dolores voluptates quia delectus! Animi, illum iusto
+        rerum est consectetur quis vel amet? Nesciunt, harum alias eum fugit
+        nemo fuga sit suscipit unde perferendis necessitatibus earum, possimus
+        similique ipsa voluptatem, hic eaque!
+      </p>
+
+      <!-- <div style="clear: both"></div> -->
+    </section>
+
+    <section>
+      <h2>2. Layout 3 Kolom</h2>
+      <div class="kolom-container">
+        <div class="kolom">
+          <h3>Kolom 1</h3>
+          <p>ini kolom sebelah kiri</p>
+        </div>
+        <div class="kolom">
+          <h3>Kolom 2</h3>
+          <p>ini kolom tengah</p>
+        </div>
+        <div class="kolom">
+          <h3>Kolom 3</h3>
+          <p>ini kolom sebelah kanan</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Image Gallery</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/30/150/150" alt="Gallery 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/40/150/150" alt="Gallery 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/50/150/150" alt="Gallery 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/60/150/150" alt="Gallery 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/70/150/150" alt="Gallery 5" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
